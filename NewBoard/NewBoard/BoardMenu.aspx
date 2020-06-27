@@ -10,18 +10,18 @@
 <body>
     <form id="form1" runat="server">
         <div>
-            <h3>게시판 목록</h3>
+            <%--<h3>게시판 목록</h3>
             <asp:GridView ID="ctlMemoList" runat="server" AutoGenerateColumns="false" HorizontalAlign="Center" class="table-responsive" >
                 <Columns>
                     <asp:BoundField HeaderText="번호" DataField="Num" />
                     <asp:HyperLinkField HeaderText="제목" 
                         DataTextField="Title"
-                        DataNavigateUrlFormatString="FrmMemoView.aspx?Num={0}"
+                        DataNavigateUrlFormatString="BoardMenu.aspx?Num={0}"
                         DataNavigateUrlFields="Num" ItemStyle-Width="350px" />
                     <asp:BoundField HeaderText="작성자" DataField="Name" />
                    <asp:BoundField HeaderText="작성일" DataField="PostDate" DataFormatString="{0:yyyy-mm-dd}" />
                 </Columns>
-            </asp:GridView>
+            </asp:GridView>--%>
         </div>
     </form>
 </body>

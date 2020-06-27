@@ -11,4 +11,15 @@ public partial class BoardUpdate : System.Web.UI.Page
     {
 
     }
+
+    protected void boardInsert_Click(object sender, EventArgs e)
+    {
+
+    }
+
+    protected void goList_Click(object sender, EventArgs e)
+    {
+
+    }
+
 }

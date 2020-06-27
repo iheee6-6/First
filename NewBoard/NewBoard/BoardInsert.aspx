@@ -26,7 +26,7 @@
 <body>
     <form id="form1" runat="server">
         <div>
-            <h3 id="ListName" class="textct">OOO - 글 작성</h3>
+            <h3 id="ListName" class="textct">글 작성</h3>
             <table class="table">
                 <tr>
                     <th>제목</th>
@@ -34,7 +34,7 @@
                         <asp:TextBox ID="title" runat="server" class="form-control" /></td>
                 </tr>
    
-                <tr>
+                <%--<tr>
                     <th>비밀글 설정</th>
 
                     <td>
@@ -55,7 +55,7 @@
                     <td>
                         <asp:TextBox ID="password" runat="server" MaxLength="4" placeholder="숫자 4자리 입력" class="form-control" />
                     </td>
-                </tr>
+                </tr>--%>
                 <tr>
                     <th>내용</th>
                     <td colspan="4">
@@ -67,9 +67,9 @@
             <hr />
 
             <div class="wrap2" style="margin-bottom: 10px; text-align: center">
-                <asp:Button ID="join" runat="server" class="btn btn-sm btn-info" Text="등록하기" OnClick="boardInsert_Click" style="margin-right:50px" />
+                <asp:Button ID="insertBtn" runat="server" class="btn btn-sm btn-info" Text="등록하기" OnClick="boardInsert_Click" style="margin-right:50px; height: 33px;" />
                
-                <asp:Button ID="Button1" runat="server" class="btn btn-sm btn-dark" Text="목록으로" OnClick="history.back();" />
+                <asp:Button ID="goList" runat="server" class="btn btn-sm btn-dark" Text="목록으로" OnClick="goList_Click" />
 
             </div>
             </div>

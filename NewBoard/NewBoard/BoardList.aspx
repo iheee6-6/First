@@ -22,7 +22,7 @@
 <body>
     <form id="form1" runat="server">
         <div>
-            <h3 id="ListName" class="textct">OOO 목록</h3>
+            <h3 id="ListName" class="textct">게시판</h3>
             <asp:GridView ID="ctlMemoList" runat="server" AutoGenerateColumns="false" HorizontalAlign="Center" class="table-responsive" >
                 <Columns>
                     <asp:BoundField HeaderText="번호" DataField="Num" />
@@ -35,7 +35,7 @@
                 </Columns>
             </asp:GridView>
             <hr />
-             <asp:Button ID="join" runat="server" class="btn btn-sm btn-secondary" style="float:right;margin-right:150px" text="글쓰기" OnClick="registerbtn_Click"/>
+             <asp:Button ID="writeBtn" runat="server" class="btn btn-sm btn-secondary" style="float:right;margin-right:150px" text="글쓰기" OnClick="writeBtn_Click"/>
             <%--<asp:HyperLink ID="lnkMemoWrite" runat="server"
                 NavigateUrl="~/FrmMemoWrite.aspx">글쓰기</asp:HyperLink>--%>
         </div>

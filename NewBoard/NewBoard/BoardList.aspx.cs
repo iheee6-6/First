@@ -11,4 +11,8 @@ public partial class BoardList : System.Web.UI.Page
     {
 
     }
+    protected void writeBtn_Click(object sender, EventArgs e)
+    {
+
+    }
 }

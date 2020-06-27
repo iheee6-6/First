@@ -26,7 +26,7 @@
     <form id="form1" runat="server">
         <div>
             <div>
-                <h3 id="boardName" class="textct">OOO - O번째 글</h3>
+                <h3 id="boardName" class="textct">O번째 글</h3>
                 <table class="table">
                     <tr>
                         <th>제목</th>
@@ -38,17 +38,17 @@
                         <td>
                             <asp:Label runat="server" ID="writer"></asp:Label></td>
                         <th>작성일</th>
-                        <td id="postDate">
+                        <td>
                             <asp:Label runat="server" ID="postDate"></asp:Label></td>
                     </tr>
 
-                    <tr>
+                   <%-- <tr>
                         <th>비밀글 여부</th>
 
                         <td colspan="4" id="secret"></td>
-                    </tr>
+                    </tr>--%>
                     <tr>
-                        <td>내용</td>
+                        <th>내용</th>
                         <td colspan="4">
                             <asp:Label runat="server" ID="content"></asp:Label></td>
                     </tr>
@@ -57,14 +57,14 @@
             <hr />
 
             <div class="wrap2" style="margin-bottom: 10px; text-align: center">
-                <asp:Button ID="update" Text="수정하기" runat="server" class="btn btn-warning" OnClick="write_Click" Style="margin-right: 50px" />
-                <asp:Button ID="delete" Text="삭제하기" runat="server" class="btn btn-danger" OnClick="write_Click" />
+                <asp:Button ID="update" Text="수정하기" runat="server" class="btn btn-warning" OnClick="updateBtn_Click" Style="margin-right: 50px" />
+                <asp:Button ID="delete" Text="삭제하기" runat="server" class="btn btn-danger" OnClick="deleteBtn_Click" />
 
             </div>
 
 
             <%--댓글 영역--%>
-            <div class="panel panel-white post panel-shadow">
+           <%-- <div class="panel panel-white post panel-shadow">
                 <table id="replyTable">
                     <thead>
                         <tr>
@@ -84,7 +84,7 @@
                     <asp:Button ID="rSubmit" runat="server" class="btn btn-sm btn-primary" Style="height: 100%; margin-top: 0px; width: 10%" Text="등록" />
 
                 </div>
-            </div>
+            </div>--%>
         </div>
     </form>
 </body>

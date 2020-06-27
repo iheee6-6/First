@@ -11,4 +11,14 @@ public partial class BoardView : System.Web.UI.Page
     {
 
     }
+
+    protected void updateBtn_Click(object sender, EventArgs e)
+    {
+
+    }
+
+    protected void deleteBtn_Click(object sender, EventArgs e)
+    {
+
+    }
 }
